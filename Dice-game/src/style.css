@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wrapper {
+  height: 80%;
+  background-color: #1f1f1f;
+  width: 40%;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.dice-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.first-dice,
+.second-dice {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.dices {
+  width: 160px;
+  height: 160px;
+  background-color: rgb(129, 6, 6);
+  border-radius: 20px;
+  transition: transform 0.3s linear;
+}
+.dices:hover {
+  transform: rotate(180deg);
+}
+
+.first-dice > h1,
+.second-dice > h1 {
+  color: #ff6b6b;
+}
+#match-status {
+  color: #ff6b6b;
+}
+.playbtn > button {
+  border: 1px solid black;
+  padding: 7px 10px;
+  background-color: #ff6b6b;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.dice {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* -------- dice - 1----------- */
+.dice-1 {
+  /* display: none; */
+}
+
+.dice-1-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.circle-size {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+/* --------- dice - 2 -------- */
+.dice-2 {
+  display: none;
+}
+.dice-2-wrapper,
+.dice-3-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.two-one-circle,
+.three-one-circle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.two-two-circle,
+.three-two-circle {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.three-three-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* --------- dice - 3 --------- */
+.dice-3 {
+  display: none;
+}
+
+/* ---------- dice - 4 ------------- */
+.dice-4 {
+  display: none;
+}
+.dice-4-wrapper,
+.dice-5-wrapper,
+.dice-6-wrapper {
+  display: flex;
+  padding: 20px;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* ----------- dice - 5---------- */
+.dice-5 {
+  display: none;
+}
+.dice-5-wrapper{
+  position: relative;
+}
+.five-five-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ------------- dice - 6 ----------- */
+.dice-6 {
+  display: none;
+}
+.dice-6-wrapper {
+  gap: 16px;
+}
+
+@media only screen and (min-width: 250px) and (max-width: 400px) {
+  .wrapper {
+    padding-top: 20px;
+    margin-top: 10px;
+    width: 80vw;
+    gap: 20px;
+    /* justify-content: center; */
+    border-radius: 20px;
+    height: auto;
+  }
+  .dice-wrapper {
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .playbtn {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}

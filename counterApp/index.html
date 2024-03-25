@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <div class="counterContainer">
+    <div>
+      <span id="res"></span>
+    </div>
+    <div class="flex" style="gap:5px">
+      <div class="operator flex"></div>
+      <div class="operator flex"></div>
+    </div>
+    <div class="flex">
+      <p style="font-weight: bold; letter-spacing: 1px;">Increment/Decrement by:</p>
+      <input id="changeValue" type="number" style="border:1px solid black; padding:2px 2px; font-size: 18px; color:black; width: 80px; margin-left: 10px;">
+    </div>
+    <div>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+</body>
+<script src="./src/main.ts"></script>
+
+</html>

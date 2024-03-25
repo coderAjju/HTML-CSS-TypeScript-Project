@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <div>
+    <div>
+      <h1>Height (cm):</h1>
+      <input id="height" type="number" placeholder="Enter height">
+    </div>
+    <div>
+      <h1>Weight (kg):</h1>
+      <input id="weight" type="number" placeholder="Enter weight">
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <button id="calculateBMI">Calculate BMI</button>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <h1 style="margin-top: -15px;">Your BMI: <span id="res"></span></h1>
+    </div>
+  </div>
+</body>
+<script src="./src/main.ts"></script>
+</html>

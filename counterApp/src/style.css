@@ -2,7 +2,7 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui;
   color:white;
 }
 body{
@@ -31,6 +31,14 @@ body{
   color:black;
   background-color: white;
   border-radius: 5px;
+}
+#changeValue{
+  border:1px solid black; 
+  padding:2px 2px; 
+  font-size: 18px; 
+  color:black; 
+  width: 80px;
+  margin-left: 10px;
 }
 #res{
   font-size: 30px;
